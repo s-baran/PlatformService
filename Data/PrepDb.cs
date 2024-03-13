@@ -15,6 +15,7 @@ namespace PlatformService.Data
 
         private static void SeedData(AppDbContext context, bool isProduction)
         {
+            Console.WriteLine($"Is production: {isProduction}");
             if (isProduction)
             {
                 Console.WriteLine("--> Attempting to apply migrations...");
